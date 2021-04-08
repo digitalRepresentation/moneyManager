@@ -10,4 +10,14 @@ use Illuminate\Routing\Controller as BaseController;
 class MainController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+
+    public function __construct()
+    {
+        //$this->middleware('auth');
+    }
+
+    public function index() {
+        return view('home');
+    }
 }
+
