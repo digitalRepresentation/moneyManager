@@ -17,7 +17,8 @@ class MainController extends BaseController
     }
 
     public function index() {
-        return view('home');
+        return 'hello';
+        //return view('home');
     }
 }
 
